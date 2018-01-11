@@ -19,7 +19,7 @@ class Params
 	    title = "Время суток";
 	    values[] = {0,1,2};
 	    default = 0;
-	    texts[] = {"День","Ночь", "Случайно"};
+	    texts[] = {"Утро","Вечер", "Ночь"};
 	};
 	class par_weather
 	{
