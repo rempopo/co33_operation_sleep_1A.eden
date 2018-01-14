@@ -40,7 +40,7 @@ tSF_MissionCondition_DefaultCheckTimer 			= 15;
  *	Игроков в зоне больше 3 (see https://github.com/10Dozen/dzn_commonFunctions/wiki/Area-Functions#dzn_fnc_ccplayers)
  *			[TRG_1, "", "> 3"] call dzn_fnc_ccPlayers 
  *	Все игроки умерли:
- *			{ {alive _x} count (call BIS_fnc_listPlayers) < 1}
+ *			(call fnc_isAllDead)
  *	Юнитов красной стороны в зоне TRG_1 меньше 3 (see https://github.com/10Dozen/dzn_commonFunctions/wiki/Area-Functions#dzn_fnc_ccunits)
  *			[ TRG_1, "east", "", "< 3"] call dzn_fnc_ccUnits
  *	Вооруженных юнитов красной стороны в зонах TRG_1, TRG_2, TRG_3 меньше 3
@@ -48,5 +48,6 @@ tSF_MissionCondition_DefaultCheckTimer 			= 15;
  */
 
 // Код условия может быть строкой или кодом в { }
-MissionCondition1 = [ "WIN", "false", "All objectives done" ];
-MissionCondition2 = [ "WIPED", { {alive _x} count (call BIS_fnc_listPlayers) < 1 }, "All dead", 30 ];
+MissionCondition1 = [ "WIN", { [ trfinish, "west", "", "< 4"] call dzn_fnc_ccUnits }, "airport captured", 30 ];
+MissionCondition2 = [ "FAIL", { [ fiasco, "west", "", "> 5"] call dzn_fnc_ccUnits }, "object lost", 120 ];
+MissionCondition3 = [ "WIPED", { {alive _x} count (call BIS_fnc_listPlayers) < 1 }, "all dead", 30 ];

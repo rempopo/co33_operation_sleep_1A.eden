@@ -37,10 +37,10 @@
 // Macros for the list of items to be chosen randomly
 #define RANDOM_ITEM	["H_HelmetB_grass","H_HelmetB"]
 // Macros to give the item only if daytime is in given inerval (e.g. to give NVGoggles only at night)
-#define NIGHT_ITEM(X)	if (daytime < 3 || daytime > 15) then { X } else { "" }
+#define NIGHT_ITEM(X)	if (daytime < 4 || daytime > 16) then { X } else { "" }
 
 // ******** ASSIGNED and UNIFORM ITEMS MACRO ********
-#define NVG_NIGHT_ITEM		if (daytime < 3 || daytime > 15) then { "rhs_1PN138" } else { "" }
+#define NVG_NIGHT_ITEM		if (daytime < 4 || daytime > 16) then { "rhs_1PN138" } else { "" }
 #define BINOCULAR_ITEM		"Binocular"
 
 #define ASSIGNED_ITEMS		"ItemMap","ItemCompass","ItemWatch","ItemRadio", NVG_NIGHT_ITEM
@@ -73,7 +73,7 @@ kit_spsf_mm = [
 ];
 kit_sprf_ar = [
 	["<EQUIPEMENT >>  ","rhs_uniform_gorka_r_y","rhs_6b23_6sh92_vog_headset","rhs_sidor","rhs_altyn_novisor",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_pkp","rhs_100Rnd_762x54mmR",["","","rhs_acc_1p78",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_pkp","rhs_100Rnd_762x54mmR_green",["","","rhs_acc_1p78",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhs_weap_tr8","",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -93,7 +93,7 @@ kit_sprf_gr = [
 ];
 kit_sprf_at = [
 	["<EQUIPEMENT >>  ","rhs_uniform_gorka_r_y","rhs_6b23_6sh92_headset","rhs_rpg_empty","rhs_altyn_novisor",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_ak74m","rhs_30Rnd_545x39_AK",["rhs_acc_dtk1983","","rhs_acc_1p78",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_ak74m","rhs_30Rnd_545x39_AK_green",["rhs_acc_dtk1983","","rhs_acc_1p78",""]],
 	["<LAUNCHER WEAPON >>  ","rhs_weap_rpg7","rhs_rpg7_PG7V_mag",["","","rhs_acc_pgo7v3",""]],
 	["<HANDGUN WEAPON >>  ","","",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -113,7 +113,7 @@ kit_sprf_ftl = [
 ];
 kit_sprf_crewcommander = [
 	["<EQUIPEMENT >>  ","rhs_uniform_flora","rhs_6b23_ML_crewofficer","RD_54_69_R148","rhs_tsh4",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_aks74u","rhs_30Rnd_545x39_AK",["rhs_acc_pgs64_74u","","",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_aks74u","rhs_30Rnd_545x39_AK_green",["rhs_acc_pgs64_74u","","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhs_weap_makarov_pm","rhs_mag_9x18_8_57N181S",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
@@ -123,7 +123,7 @@ kit_sprf_crewcommander = [
 ];
 kit_sprf_crewoperator = [
 	["<EQUIPEMENT >>  ","rhs_uniform_flora","rhs_6b23_ML_crew","","rhs_tsh4",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_aks74u","rhs_30Rnd_545x39_AK",["rhs_acc_pgs64_74u","","",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_aks74u","rhs_30Rnd_545x39_AK_green",["rhs_acc_pgs64_74u","","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","hgun_Rook40_F","16Rnd_9x21_Mag",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -133,7 +133,7 @@ kit_sprf_crewoperator = [
 ];
 kit_sprf_crewdriver = [
 	["<EQUIPEMENT >>  ","rhs_uniform_flora","rhs_6b23_ML_engineer","","rhs_tsh4",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_aks74u","rhs_30Rnd_545x39_AK",["rhs_acc_pgs64_74u","","",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_aks74u","rhs_30Rnd_545x39_AK_green",["rhs_acc_pgs64_74u","","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","hgun_Rook40_F","16Rnd_9x21_Mag",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -149,7 +149,7 @@ kit_sprf_crewdriver = [
 
 kit_cccp_r = [
 	["<EQUIPEMENT >>  ","rhs_uniform_vdv_flora","rhs_6b23_ML_rifleman","rhs_sidor","rhs_ssh68",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_ak74","rhs_30Rnd_545x39_AK",["rhs_acc_dtk","rhs_acc_2dpZenit","",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_ak74","rhs_30Rnd_545x39_AK_green",["rhs_acc_dtk","rhs_acc_2dpZenit","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","","",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -159,7 +159,7 @@ kit_cccp_r = [
 ];
 kit_cccp_sl = [
 	["<EQUIPEMENT >>  ","rhs_uniform_vdv_flora","rhs_6b23_ML_crewofficer","","345th_beret_VDV_officer",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_ak74","rhs_30Rnd_545x39_AK",["rhs_acc_dtk","rhs_acc_2dpZenit","",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_ak74","rhs_30Rnd_545x39_AK_green",["rhs_acc_dtk","rhs_acc_2dpZenit","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhs_weap_makarov_pm","rhs_mag_9x18_8_57N181S",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
@@ -169,7 +169,7 @@ kit_cccp_sl = [
 ];
 kit_cccp_med = [
 	["<EQUIPEMENT >>  ","rhs_uniform_vdv_flora","rhs_6b23_ML_medic","","ssh68_khaki",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_ak74","rhs_30Rnd_545x39_AK",["rhs_acc_dtk","rhs_acc_2dpZenit","",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_ak74","rhs_30Rnd_545x39_AK_green",["rhs_acc_dtk","rhs_acc_2dpZenit","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhs_weap_makarov_pm","rhs_mag_9x18_8_57N181S",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -179,7 +179,7 @@ kit_cccp_med = [
 ];
 kit_cccp_r1 = [
 	["<EQUIPEMENT >>  ","rhs_uniform_vdv_flora","rhs_6b23_ML_engineer","rhs_sidor","ssh68_khaki",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_ak74","rhs_30Rnd_545x39_AK",["rhs_acc_dtk","rhs_acc_2dpZenit","",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_ak74","rhs_30Rnd_545x39_AK_green",["rhs_acc_dtk","rhs_acc_2dpZenit","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhs_weap_makarov_pm","rhs_mag_9x18_8_57N181S",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -189,7 +189,7 @@ kit_cccp_r1 = [
 ];
 kit_cccp_ar = [
 	["<EQUIPEMENT >>  ","rhs_uniform_vdv_flora","rhs_6b23_ML_engineer","rhs_sidor","rhs_ssh68",""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_pkm","rhs_100Rnd_762x54mmR",["","","",""]],
+	["<PRIMARY WEAPON >>  ","rhs_weap_pkm","rhs_100Rnd_762x54mmR_green",["","","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhs_weap_makarov_pm","rhs_mag_9x18_8_57N181S",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
