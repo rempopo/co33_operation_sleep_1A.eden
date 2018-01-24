@@ -147,6 +147,14 @@ kit_sprf_crewdriver = [
 
 //союзники
 
+kit_cccp_random = [
+				"kit_cccp_r1"
+				,"kit_cccp_r"
+				,"kit_cccp_ar"
+				,"kit_cccp_med"
+				,"kit_cccp_sl"
+];
+
 kit_cccp_r = [
 	["<EQUIPEMENT >>  ","rhs_uniform_vdv_flora","rhs_6b23_ML_rifleman","rhs_sidor","rhs_ssh68",""],
 	["<PRIMARY WEAPON >>  ","rhs_weap_ak74","rhs_30Rnd_545x39_AK_green",["rhs_acc_dtk","rhs_acc_2dpZenit","",""]],
@@ -197,15 +205,21 @@ kit_cccp_ar = [
 	["<VEST ITEMS >> ",[["rhs_mag_rgd5",2],["rhs_100Rnd_762x54mmR_green",1]]],
 	["<BACKPACK ITEMS >> ",[["rhs_100Rnd_762x54mmR_green",2]]]
 ];
-kit_cccp_random = [
-				"kit_cccp_r1"
-				,"kit_cccp_r"
-				,"kit_cccp_ar"
-				,"kit_cccp_med"
-				,"kit_cccp_sl"
-				];
+
 				
 // враги
+
+kit_usa80_random = [
+				"kit_usa80_r"
+				,"kit_usa80_r1"
+				,"kit_usa80_r2"
+				,"kit_usa80_ar"
+				,"kit_usa80_gr"
+				,"kit_usa80_at"
+				,"kit_usa80_aa"
+				,"kit_usa80_sl"
+];
+
 kit_usa80_r = [
 	["<EQUIPEMENT >>  ","usm_bdu_w_m","usm_vest_rba_lbv_rm","","rhs_8point_marpatwd",""],
 	["<PRIMARY WEAPON >>  ","rhs_weap_m16a4_carryhandle","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Orange",["","","optic_ACO_grn",""]],
@@ -286,13 +300,4 @@ kit_usa80_r2 = [
 	["<VEST ITEMS >> ",[["1Rnd_HE_Grenade_shell",7],["1Rnd_Smoke_Grenade_shell",2],["HandGrenade",2],["SmokeShell",1],["rhs_mag_m18_yellow",2],["rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Orange",11]]],
 	["<BACKPACK ITEMS >> ",[]]
 ];
-kit_usa80_random = [
-				"kit_usa80_r"
-				,"kit_usa80_r1"
-				,"kit_usa80_r2"
-				,"kit_usa80_ar"
-				,"kit_usa80_gr"
-				,"kit_usa80_at"
-				,"kit_usa80_aa"
-				,"kit_usa80_sl"
-				];
+
