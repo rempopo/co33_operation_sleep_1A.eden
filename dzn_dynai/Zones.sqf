@@ -46,7 +46,7 @@
     /* Behavior: Speed, Behavior, Combat mode, Formation */
     ,["FULL","AWARE","YELLOW","LINE"]
      /* (OPTIONAL) Activation condition */
-    ,{ ts_tasks=true }
+    ,{ ts_tasks > 0 }
 ],
 
 [
